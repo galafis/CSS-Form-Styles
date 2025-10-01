@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form Styles - Test Page</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <style>
+        body {
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Form Styles Test</h1>
+
+        <div class="form-group">
+            <label for="test-input">Test Input</label>
+            <input type="text" id="test-input" class="form-input" value="Hello World">
+        </div>
+
+        <div class="form-group">
+            <label for="test-select">Test Select</label>
+            <select id="test-select" class="form-select">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+        </div>
+
+        <button id="test-button" class="btn btn-primary">Test Button</button>
+    </div>
+
+    <script src="./test.js"></script>
+</body>
+</html>
