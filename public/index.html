@@ -3,169 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Form Styles - Professional Form Components</title>
+    <title>CSS Form Styles - Home</title>
     <link rel="stylesheet" href="../src/styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn-demo {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-demo:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .author {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .author a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .author a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>CSS Form Styles</h1>
-        <p>Professional form styling library with modern components</p>
-
-        <!-- Text Inputs -->
-        <h2>Text Inputs</h2>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" class="form-input" placeholder="Enter your name">
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" class="form-input" placeholder="Enter your email">
-        </div>
-
-        <div class="form-group">
-            <label for="disabled-input">Disabled Input</label>
-            <input type="text" id="disabled-input" class="form-input" value="This is disabled" disabled>
-        </div>
-
-        <!-- Validation States -->
-        <h2>Validation States</h2>
-        <div class="form-group">
-            <label for="valid-input">Valid Input</label>
-            <input type="text" id="valid-input" class="form-input valid" value="Valid input">
-            <span class="success-message">✓ This field is valid</span>
-        </div>
-
-        <div class="form-group">
-            <label for="invalid-input">Invalid Input</label>
-            <input type="text" id="invalid-input" class="form-input invalid" value="Invalid input">
-            <span class="error-message">✗ This field has an error</span>
-        </div>
-
-        <!-- Select Dropdown -->
-        <h2>Select Dropdown</h2>
-        <div class="form-group">
-            <label for="country">Country</label>
-            <select id="country" class="form-select">
-                <option value="">Select a country</option>
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="uk">United Kingdom</option>
-                <option value="br">Brazil</option>
-                <option value="mx">Mexico</option>
-            </select>
-        </div>
-
-        <!-- Checkboxes -->
-        <h2>Checkboxes</h2>
-        <div class="checkbox-wrapper">
-            <input type="checkbox" id="checkbox1" checked>
-            <label for="checkbox1">I agree to the terms and conditions</label>
-        </div>
-        <div class="checkbox-wrapper">
-            <input type="checkbox" id="checkbox2">
-            <label for="checkbox2">Subscribe to newsletter</label>
-        </div>
-        <div class="checkbox-wrapper">
-            <input type="checkbox" id="checkbox3">
-            <label for="checkbox3">Send me promotional emails</label>
-        </div>
-
-        <!-- Radio Buttons -->
-        <h2>Radio Buttons</h2>
-        <div class="radio-wrapper">
-            <input type="radio" id="radio1" name="payment" checked>
-            <label for="radio1">Credit Card</label>
-        </div>
-        <div class="radio-wrapper">
-            <input type="radio" id="radio2" name="payment">
-            <label for="radio2">PayPal</label>
-        </div>
-        <div class="radio-wrapper">
-            <input type="radio" id="radio3" name="payment">
-            <label for="radio3">Bank Transfer</label>
-        </div>
-
-        <!-- Textarea -->
-        <h2>Textarea</h2>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" class="form-input" placeholder="Enter your message here..."></textarea>
-        </div>
-
-        <!-- File Input -->
-        <h2>File Input</h2>
-        <div class="form-group">
-            <label for="file-upload">Upload File</label>
-            <div class="file-input-wrapper">
-                <input type="file" id="file-upload">
-                <label for="file-upload" class="file-input-label">
-                    📁 Click to upload or drag and drop
-                </label>
-            </div>
-        </div>
-
-        <!-- Buttons -->
-        <h2>Buttons</h2>
-        <div class="form-group">
-            <button class="btn btn-primary">Primary Button</button>
-            <button class="btn btn-secondary">Secondary Button</button>
-            <button class="btn btn-outline">Outline Button</button>
-        </div>
-
-        <div class="form-group">
-            <button class="btn btn-success">Success Button</button>
-            <button class="btn btn-danger">Danger Button</button>
-            <button class="btn" disabled>Disabled Button</button>
-        </div>
-
-        <!-- Complete Form Example -->
-        <h2>Complete Form Example</h2>
-        <form>
-            <div class="form-group">
-                <label for="full-name">Full Name *</label>
-                <input type="text" id="full-name" class="form-input" required>
-            </div>
-
-            <div class="form-group">
-                <label for="user-email">Email Address *</label>
-                <input type="email" id="user-email" class="form-input" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" class="form-input">
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <select id="subject" class="form-select">
-                    <option value="">Choose a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="billing">Billing Question</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="comments">Comments</label>
-                <textarea id="comments" class="form-input"></textarea>
-            </div>
-
-            <div class="checkbox-wrapper">
-                <input type="checkbox" id="consent" required>
-                <label for="consent">I consent to the processing of my data *</label>
-            </div>
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit Form</button>
-                <button type="reset" class="btn btn-outline">Reset</button>
-            </div>
-        </form>
-
+        <h1>Bem-vindo ao CSS Form Styles</h1>
+        <p>Uma biblioteca profissional de estilos CSS para formulários web modernos e responsivos, desenvolvida por Gabriel Demetrios Lafis.</p>
+        <p>Explore a demonstração interativa para ver todos os componentes em ação.</p>
+        <a href="demo.html" class="btn-demo">Ver Demonstração</a>
         <div class="author">
-            Created by Gabriel Demetrios Lafis | <a href="https://github.com/galafis/CSS-Form-Styles" style="color: inherit;">GitHub Repository</a>
+            Criado por Gabriel Demetrios Lafis | <a href="https://github.com/galafis/CSS-Form-Styles">Repositório GitHub</a>
         </div>
     </div>
 </body>
 </html>
+
