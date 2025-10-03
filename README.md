@@ -10,6 +10,10 @@
 
 ## 🇧🇷 Português
 
+## 🖼️ Imagem Hero
+
+![CSS Form Styles Hero Image](assets/hero_image.png)
+
 ## Descrição
 
 **CSS Form Styles** é uma biblioteca de estilos CSS moderna e profissional, desenvolvida por Gabriel Demetrios Lafis, para aprimorar a aparência e a usabilidade de formulários web. Este projeto oferece um conjunto abrangente de componentes de formulário estilizados, prontos para serem integrados em qualquer projeto HTML, garantindo uma experiência de usuário consistente e visualmente atraente.
@@ -66,11 +70,6 @@ Os estilos são aplicados automaticamente aos elementos de formulário com as cl
 <button class="btn btn-primary">Enviar</button>
 ```
 
-## Estrutura do Projeto
-
-![Estrutura do Projeto](docs/project_structure.png)
-
-
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
@@ -91,6 +90,10 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 <a name="en-us"></a>
 
 ## 🇬🇧 English
+
+## 🖼️ Hero Image
+
+![CSS Form Styles Hero Image](assets/hero_image.png)
 
 ## Description
 
@@ -147,11 +150,6 @@ Styles are automatically applied to form elements with the appropriate CSS class
 ```html
 <button class="btn btn-primary">Submit</button>
 ```
-
-## Project Structure
-
-![Project Structure](docs/project_structure_en.png)
-
 
 ## Contribution
 
