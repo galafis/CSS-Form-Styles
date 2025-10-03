@@ -70,6 +70,10 @@ Os estilos são aplicados automaticamente aos elementos de formulário com as cl
 <button class="btn btn-primary">Enviar</button>
 ```
 
+## Estrutura do Projeto
+
+![Estrutura do Projeto](docs/project_structure.png)
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.

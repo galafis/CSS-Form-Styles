@@ -27,6 +27,7 @@
     <div class="test-container">
         <h1>Form Styles Test</h1>
 
+        <!-- Existing elements -->
         <div class="form-group">
             <label for="test-input">Test Input</label>
             <input type="text" id="test-input" class="form-input" value="Hello World">
@@ -41,8 +42,51 @@
         </div>
 
         <button id="test-button" class="btn btn-primary">Test Button</button>
+
+        <!-- New elements for extended tests -->
+        <h2>Validation States Test</h2>
+        <div class="form-group">
+            <label for="valid-input">Valid Input</label>
+            <input type="text" id="valid-input" class="form-input valid" value="Valid input">
+            <span class="success-message">✓ This field is valid</span>
+        </div>
+
+        <div class="form-group">
+            <label for="invalid-input">Invalid Input</label>
+            <input type="text" id="invalid-input" class="form-input invalid" value="Invalid input">
+            <span class="error-message">✗ This field has an error</span>
+        </div>
+
+        <h2>Checkbox & Radio Test</h2>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="checkbox1" checked>
+            <label for="checkbox1">Checkbox Test</label>
+        </div>
+        <div class="radio-wrapper">
+            <input type="radio" id="radio1" name="payment" checked>
+            <label for="radio1">Radio Test</label>
+        </div>
+
+        <h2>Textarea Test</h2>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-input" placeholder="Enter your message here..."></textarea>
+        </div>
+
+        <h2>File Input Test</h2>
+        <div class="form-group">
+            <label for="file-upload">Upload File</label>
+            <div class="file-input-wrapper">
+                <input type="file" id="file-upload">
+                <label for="file-upload" class="file-input-label">
+                    📁 Click to upload or drag and drop
+                </label>
+            </div>
+        </div>
+
     </div>
 
     <script src="./test.js"></script>
 </body>
 </html>
+

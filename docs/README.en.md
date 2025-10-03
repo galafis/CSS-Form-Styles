@@ -2,6 +2,10 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
+## 🖼️ Hero Image
+
+![CSS Form Styles Hero Image](assets/hero_image.png)
+
 ## Description
 
 **CSS Form Styles** is a modern and professional CSS styling library, developed by Gabriel Demetrios Lafis, designed to enhance the appearance and usability of web forms. This project offers a comprehensive set of styled form components, ready to be integrated into any HTML project, ensuring a consistent and visually appealing user experience.
@@ -61,6 +65,8 @@ Styles are automatically applied to form elements with the appropriate CSS class
 ## Project Structure
 
 ![Project Structure](docs/project_structure_en.png)
+
+
 
 
 ## Contribution
