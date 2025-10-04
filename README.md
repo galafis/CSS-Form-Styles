@@ -1,8 +1,8 @@
 # CSS Form Styles
 
-[![Status do Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/galafis/CSS-Form-Styles/actions) [![Licença MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Status do Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/galafis/CSS-Form-Styles/actions) [![Licença MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-blue)](https://galafis.github.io/CSS-Form-Styles/public/index.html)
 
-[English](README.md#en-us) | [Português](README.md#pt-br)
+[English](#en-us) | [Português](#pt-br)
 
 ---
 
@@ -23,13 +23,13 @@
 *   **Estilos Profissionais**: Design limpo e moderno para todos os elementos de formulário.
 *   **Responsividade**: Otimizado para funcionar perfeitamente em dispositivos de todos os tamanhos.
 *   **Fácil de Usar**: Integração simples com qualquer projeto HTML.
-*   **Componentes Abrangentes**: Estilos para inputs de texto, selects, checkboxes, radio buttons, textareas, file inputs e botões.
+*   **Componentes Abrangentes**: Estilos para inputs de texto, selects, checkboxes, radio buttons, textareas, file inputs, inputs de senha com toggle, inputs de range e botões.
 *   **Estados de Validação**: Suporte visual para estados de sucesso e erro.
-*   **Acessibilidade**: Foco na usabilidade e acessibilidade.
+*   **Acessibilidade**: Foco na usabilidade e acessibilidade, incluindo `focus-visible`.
 
 ## Demonstração
 
-Visualize os estilos em ação na [página de demonstração](https://gabrieldemetrioslafis.github.io/CSS-Form-Styles/).
+Visualize os estilos em ação na [página de demonstração](https://galafis.github.io/CSS-Form-Styles/public/demo.html).
 
 ## Instalação
 
@@ -42,18 +42,20 @@ Para utilizar os estilos em seu projeto, siga os passos abaixo:
     ```
 
 2.  **Copie os arquivos:**
-    Copie o arquivo `styles.css` da pasta `src/` para o diretório de estilos do seu projeto.
+    Copie o arquivo `styles.css` da pasta `src/` e `script.js` para o diretório de estilos/scripts do seu projeto.
 
 3.  **Link no seu HTML:**
-    Adicione a seguinte linha no `<head>` do seu arquivo HTML:
+    Adicione as seguintes linhas no `<head>` e antes do fechamento do `</body>` do seu arquivo HTML:
 
     ```html
     <link rel="stylesheet" href="path/to/your/styles.css">
+    <!-- No final do body, antes de </body> -->
+    <script src="path/to/your/script.js"></script>
     ```
 
 ## Uso
 
-Os estilos são aplicados automaticamente aos elementos de formulário com as classes CSS apropriadas. Consulte o arquivo `public/index.html` para exemplos de uso de cada componente.
+Os estilos são aplicados automaticamente aos elementos de formulário com as classes CSS apropriadas. Consulte o arquivo `public/demo.html` para exemplos de uso de cada componente.
 
 ### Exemplo de Input de Texto
 
@@ -64,15 +66,65 @@ Os estilos são aplicados automaticamente aos elementos de formulário com as cl
 </div>
 ```
 
+### Exemplo de Input de Senha com Toggle
+
+```html
+<div class="form-group">
+    <label for="password">Senha</label>
+    <div class="password-wrapper">
+        <input type="password" id="password" class="form-input" placeholder="Digite sua senha">
+        <button type="button" class="password-toggle" aria-label="Alternar visibilidade da senha">
+            👁️
+        </button>
+    </div>
+</div>
+```
+
+### Exemplo de Input de Range
+
+```html
+<div class="form-group">
+    <label for="volume">Volume</label>
+    <input type="range" id="volume" min="0" max="100" value="50">
+</div>
+```
+
 ### Exemplo de Botão Primário
 
 ```html
 <button class="btn btn-primary">Enviar</button>
 ```
 
+## Estrutura do Projeto
+
+```
+CSS-Form-Styles/
+├── assets/
+│   └── hero_image.png
+├── docs/
+│   ├── README.en.md
+│   ├── project_structure.mmd
+│   ├── project_structure.png
+│   ├── project_structure_en.mmd
+│   └── project_structure_en.png
+├── public/
+│   ├── demo.html
+│   └── index.html
+├── src/
+│   ├── script.js
+│   └── styles.css
+├── tests/
+│   ├── test.html
+│   └── test.js
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+```
+
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+Contribuições são bem-vindas! Por favor, consulte o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes sobre como contribuir.
 
 ## Licença
 
@@ -104,13 +156,13 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 *   **Professional Styles**: Clean and modern design for all form elements.
 *   **Responsiveness**: Optimized to work perfectly on devices of all sizes.
 *   **Easy to Use**: Simple integration with any HTML project.
-*   **Comprehensive Components**: Styles for text inputs, selects, checkboxes, radio buttons, textareas, file inputs, and buttons.
+*   **Comprehensive Components**: Styles for text inputs, selects, checkboxes, radio buttons, textareas, file inputs, password inputs with toggle, range inputs, and buttons.
 *   **Validation States**: Visual support for success and error states.
-*   **Accessibility**: Focus on usability and accessibility.
+*   **Accessibility**: Focus on usability and accessibility, including `focus-visible`.
 
 ## Demo
 
-See the styles in action on the [demo page](https://gabrieldemetrioslafis.github.io/CSS-Form-Styles/).
+See the styles in action on the [demo page](https://galafis.github.io/CSS-Form-Styles/public/demo.html).
 
 ## Installation
 
@@ -123,18 +175,20 @@ To use the styles in your project, follow these steps:
     ```
 
 2.  **Copy the files:**
-    Copy the `styles.css` file from the `src/` folder to your project's styles directory.
+    Copy the `styles.css` file from the `src/` folder and `script.js` to your project's styles/scripts directory.
 
 3.  **Link in your HTML:**
-    Add the following line to the `<head>` of your HTML file:
+    Add the following lines in the `<head>` and before the closing `</body>` tag of your HTML file:
 
     ```html
     <link rel="stylesheet" href="path/to/your/styles.css">
+    <!-- At the end of the body, before </body> -->
+    <script src="path/to/your/script.js"></script>
     ```
 
 ## Usage
 
-Styles are automatically applied to form elements with the appropriate CSS classes. Refer to the `public/index.html` file for examples of how to use each component.
+Styles are automatically applied to form elements with the appropriate CSS classes. Refer to the `public/demo.html` file for examples of how to use each component.
 
 ### Text Input Example
 
@@ -145,15 +199,65 @@ Styles are automatically applied to form elements with the appropriate CSS class
 </div>
 ```
 
+### Password Input with Toggle Example
+
+```html
+<div class="form-group">
+    <label for="password">Password</label>
+    <div class="password-wrapper">
+        <input type="password" id="password" class="form-input" placeholder="Enter your password">
+        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+            👁️
+        </button>
+    </div>
+</div>
+```
+
+### Range Input Example
+
+```html
+<div class="form-group">
+    <label for="volume">Volume</label>
+    <input type="range" id="volume" min="0" max="100" value="50">
+</div>
+```
+
 ### Primary Button Example
 
 ```html
 <button class="btn btn-primary">Submit</button>
 ```
 
+## Project Structure
+
+```
+CSS-Form-Styles/
+├── assets/
+│   └── hero_image.png
+├── docs/
+│   ├── README.en.md
+│   ├── project_structure.mmd
+│   ├── project_structure.png
+│   ├── project_structure_en.mmd
+│   └── project_structure_en.png
+├── public/
+│   ├── demo.html
+│   └── index.html
+├── src/
+│   ├── script.js
+│   └── styles.css
+├── tests/
+│   ├── test.html
+│   └── test.js
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+```
+
 ## Contribution
 
-Contributions are welcome! Feel free to open issues or submit pull requests.
+Contributions are welcome! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more details on how to contribute.
 
 ## License
 
