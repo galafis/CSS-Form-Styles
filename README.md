@@ -95,6 +95,36 @@ Os estilos são aplicados automaticamente aos elementos de formulário com as cl
 <button class="btn btn-primary">Enviar</button>
 ```
 
+## 🏗️ Arquitetura dos Componentes
+
+```mermaid
+graph TD
+    A[CSS Form Styles] --> B[Tipos de Input]
+    A --> C[Estados de Validação]
+    A --> D[Botões]
+    B --> B1[text · email · password]
+    B --> B2[select · textarea]
+    B --> B3[checkbox · radio]
+    B --> B4[file · range]
+    B --> B5[password com toggle]
+    C --> C1[Estado Padrão]
+    C --> C2[Estado de Sucesso]
+    C --> C3[Estado de Erro]
+    C --> C4[focus-visible]
+    D --> D1[btn-primary]
+    D --> D2[btn-secondary]
+    D --> D3[btn-danger]
+    B1 --> E[form-group wrapper]
+    B2 --> E
+    B3 --> E
+    B4 --> E
+    E --> F[Saída Estilizada Responsiva]
+    C1 --> F
+    C2 --> F
+    C3 --> F
+    D1 --> F
+```
+
 ## Estrutura do Projeto
 
 ```
@@ -226,6 +256,36 @@ Styles are automatically applied to form elements with the appropriate CSS class
 
 ```html
 <button class="btn btn-primary">Submit</button>
+```
+
+## 🏗️ Component Architecture
+
+```mermaid
+graph TD
+    A[CSS Form Styles] --> B[Input Types]
+    A --> C[Validation States]
+    A --> D[Buttons]
+    B --> B1[text · email · password]
+    B --> B2[select · textarea]
+    B --> B3[checkbox · radio]
+    B --> B4[file · range]
+    B --> B5[password with toggle]
+    C --> C1[Default State]
+    C --> C2[Success State]
+    C --> C3[Error State]
+    C --> C4[focus-visible]
+    D --> D1[btn-primary]
+    D --> D2[btn-secondary]
+    D --> D3[btn-danger]
+    B1 --> E[form-group wrapper]
+    B2 --> E
+    B3 --> E
+    B4 --> E
+    E --> F[Responsive Styled Output]
+    C1 --> F
+    C2 --> F
+    C3 --> F
+    D1 --> F
 ```
 
 ## Project Structure
