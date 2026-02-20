@@ -1,0 +1,25 @@
+{
+  "name": "css-form-styles",
+  "version": "1.0.0",
+  "description": "Biblioteca CSS para estilizacao moderna de formularios HTML com temas, validacao visual e responsividade",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "npx http-server public -p 3000 -o",
+    "test": "npx http-server tests -p 3001 -o /test.html"
+  },
+  "keywords": [
+    "css",
+    "forms",
+    "styles",
+    "frontend",
+    "html",
+    "ui",
+    "responsive"
+  ],
+  "author": "Gabriel Demetrios Lafis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galafis/CSS-Form-Styles.git"
+  }
+}
